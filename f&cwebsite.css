@@ -1,0 +1,46 @@
+:root{
+    --colour1: #14213d;
+    --colour2: #fca311;
+    --colour3: #e5e5e5;
+    --colour4: #ffffff;
+    --colour5: #000000;
+}
+
+body{
+    background-color: var(--colour4);
+}
+.container {
+    display: flex;
+    color: var(--colour5);
+    background-color: var(--colour3);
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+.cardcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 6px 11px 19px -11px rgba(0,0,0,0.75);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 25rem;
+    background-color: var(--colour1);
+    color: var(--colour3);
+    margin-bottom: 150px;
+    margin-top: 150px;
+    padding: 20px;
+    box-shadow: 6px 11px 19px -11px rgba(0,0,0,0.75);
+}
+
+h1{
+    color: var(--colour2);
+}
+.showhide{
+    width: 15%;
+    align-self: center;
+    justify-self: flex-end;
+}
