@@ -1,14 +1,12 @@
 
-function showHide() {
-    
-    let showHide = document.getElementsByClassName("showhide");
-    console.log(showHide);
-    let toHideShow = document.getElementsByClassName(showHide.name)
+function showHide(button) {
+    let toHideShow = document.getElementsByClassName(button.name);
+    let showHide = button;
     if (showHide.innerHTML === "Show"){
         showHide.innerHTML = "Hide";
-        toHideShow.display = "block";
+        toHideShow[0].classList.toggle('show');
     } else {
-        showHide.innerHTML = "Show"
-        toHideShow.innerHTML = "none"
+        showHide.innerHTML = "Show";
+        toHideShow[0].classList.toggle('show');
     }
 }

@@ -18,15 +18,18 @@
         <![endif]-->
         <container class="container">
             <section class="parallax">
-                <h1>Welcome!</h1>
+                <h1 id="introh1">Welcome!</h1>
                 <p>I'm Taha Hassan, an EFL teacher and aspiring front end developer. I always have a hobby or project on the go and it usually involves making something. Some of my interests include:  music, 3D animation, activism, film, martial arts, languages/translation and, of course, software development.
                 </p>
             </section>
         </container>
         <container class="cardcontainer">
             <card class="card">
+            <section class="title>">
             <h1>Music</h1>
             <p>My first instrument was the guitar but I also play bass and use a DAW (Digital Audio Workstation)...</p>
+            </section>
+            <section id="tohide" class="music">
             <p>I've been an off-and-on band member of Screaming Toenail... a queer decolonial punk band. I played bass and helped write songs. In the time was playing for them we released an EP, did a short UK tour and played in international festivals along with acts such as Mykki Blanco.
 
                 I've been commissioned to produce music... I made music for the farmerama podcast
@@ -34,27 +37,40 @@
                 For a radioplay
                 
                 I've also done some solo stuff...</p>
-                <button class="showhide" onclick="showHide(e)">Show</button>
+            </section>
+                <button class="showhide" onclick="showHide(this)" name="music">Show</button>
             </card>
             <card class="card">
+            <section class="title">
                 <h1>Animation</h1>
                 <p>I wanted to make videos to go along with musical ideas I had so I did a course on blender animation...</p>
-                <p>I loved how it was both very very technical and also very very creative. I'm especially into using texture maps, particle simulation and procedural generation. Here are some things that I made while I was on the course.</p>
-                <button class="showhide" onclick="showHide(e)">Show</button>
+            </section>
+            <section id="tohide" class="animation">
+                <p  >I loved how it was both very very technical and also very very creative. I'm especially into using texture maps, particle simulation and procedural generation. Here are some things that I made while I was on the course.</p>
+            </section>
+                <button class="showhide" onclick="showHide(this)" name="animation">Show</button>
             </card>
             <card class="card">
+            <section class="title">
                 <h1>Activism</h1>
                 <p>I was a member of the squatted queer social center collective, the House Of Brag...</p>
-                <p id="activism">We put on lots of events including parties, gigs, workshops, protests film screenings and more. I learned a lot about collaborating with others, how to run a meeting and how to coordinate people.
+            </section>
+            <section id="tohide" class="activism">
+                <p  >We put on lots of events including parties, gigs, workshops, protests film screenings and more. I learned a lot about collaborating with others, how to run a meeting and how to coordinate people.
                     I also volunteer doing translation and childcare for Housing Action Southwark and Lambeth</p>
+            </section>
                 <button class="showhide" 
-                name="activism" onclick="showHide(e)">Show</button>
+                name="activism" onclick="showHide(this)" name="activism">Show</button>
             </card>
             <card class="card">
+            <section class="title">
                 <h1>Martial Arts</h1>
                 <p>I love Brazillian Jiu Jitsu, but I've also done some Muay Thai...</p>
-                <p>I've been training off and on for the past 8 years, more off than on because of some chronic injuries. I've enetered a bjj competition and volunteered as a Muay Thai coach at a queer kickboxing class.</p>
-                <button class="showhide" onclick="showHide(e)">Show</button>
+            </section>
+            <section id="tohide" class="martial arts">
+                <p >I've been training off and on for the past 8 years, more off than on because of some chronic injuries. I've enetered a bjj competition and volunteered as a Muay Thai coach at a queer kickboxing class.</p>
+            </section>
+                <button class="showhide" onclick="showHide(this)" name="martial arts">Show</button>
             </card>
         </container>
         
