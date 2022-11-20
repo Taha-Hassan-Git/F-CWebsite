@@ -3,14 +3,29 @@ let building = document.getElementById("building");
 let text = document.getElementById('h1text');
 const hidden = document.querySelectorAll(".hidden");
 
+let options = {
+    root: null,
+    rootMargin: "10px",
+    threshold: 0.75
+  }
+  
 
-const observer = new IntersectionObserver((entries) => {
+
+let callback = (entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+};
+let observer = new IntersectionObserver(callback, options);
+/* const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) =>{
         if (entry.isIntersecting){
             entry.target.classList.add("show");
         }
     })
-});
+}); */
 
 hidden.forEach((el) => observer.observe(el));
 

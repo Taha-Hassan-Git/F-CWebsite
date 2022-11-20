@@ -150,18 +150,18 @@ h1{
 
 .hidden{
     opacity: 0;
-    transition: 2000ms;
-    -webkit-transition: 2000ms;
-    -moz-transition: 2000ms;
-    -ms-transition: 2000ms;
-    -o-transition: 2000ms;
+    transition: 1000ms;
+    -webkit-transition: 1000ms;
+    -moz-transition: 1000ms;
+    -ms-transition: 1000ms;
+    -o-transition: 1000ms;
 }
 
 .show {
     opacity: 1;
-    transition: 2000ms;
-    -webkit-transition: 2000ms;
-    -moz-transition: 2000ms;
-    -ms-transition: 2000ms;
-    -o-transition: 2000ms;
+    transition: 1000ms;
+    -webkit-transition: 1000ms;
+    -moz-transition: 1000ms;
+    -ms-transition: 1000ms;
+    -o-transition: 1000ms;
 }
