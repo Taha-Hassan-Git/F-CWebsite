@@ -1,3 +1,26 @@
+let sky = document.getElementById("sky");
+let building = document.getElementById("building");
+let text = document.getElementById('h1text');
+const hidden = document.querySelectorAll(".hidden");
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) =>{
+        if (entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    })
+});
+
+hidden.forEach((el) => observer.observe(el));
+
+window.addEventListener('scroll', function(){
+    var yValue = this.window.scrollY;
+    sky.style.top = yValue + 0.1 + "px";
+    text.style.left = yValue + 1 + "px";
+    text.style.top = yValue + 0.1 + "px";
+})
+
 
 function showHide(button) {
     let toHideShow = document.getElementsByClassName(button.name);
@@ -11,13 +34,3 @@ function showHide(button) {
     }
 }
 
-let sky = document.getElementById("sky");
-let building = document.getElementById("building");
-let text = document.getElementById('h1text');
-
-window.addEventListener('scroll', function(){
-    var yValue = this.window.scrollY;
-    sky.style.top = yValue + 0.1 + "px";
-    text.style.left = yValue + 1 + "px";
-    text.style.top = yValue + 0.1 + "px";
-})

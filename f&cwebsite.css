@@ -73,7 +73,7 @@ body{
     position: relative;
     width: 100%;
     min-height: fit-content;
-    background-color: var(--colour1);
+    background-color: var(--colour5);
     color: var(--colour3);
     margin-bottom: 50vh;
     margin-top: 50vh;
@@ -86,7 +86,7 @@ body{
     top: -18vh;
     width: 100%;
     height: 150px;
-    background: linear-gradient(to top, var(--colour1), transparent);
+    background: linear-gradient(to top, var(--colour5), transparent);
     z-index: -1;
 }
 .card::after {
@@ -96,7 +96,7 @@ body{
     bottom: -18vh;
     width: 100%;
     height: 150px;
-    background: linear-gradient(to bottom, var(--colour1), transparent);
+    background: linear-gradient(to bottom, var(--colour5), transparent);
     z-index: -1;
 }
 
@@ -146,4 +146,22 @@ h1{
     background-color: var(--colour2);
     outline: outset 1px var(--colour5);
     height: 2rem;
+}
+
+.hidden{
+    opacity: 0;
+    transition: 2000ms;
+    -webkit-transition: 2000ms;
+    -moz-transition: 2000ms;
+    -ms-transition: 2000ms;
+    -o-transition: 2000ms;
+}
+
+.show {
+    opacity: 1;
+    transition: 2000ms;
+    -webkit-transition: 2000ms;
+    -moz-transition: 2000ms;
+    -ms-transition: 2000ms;
+    -o-transition: 2000ms;
 }
