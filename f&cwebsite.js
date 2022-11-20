@@ -19,13 +19,6 @@ let callback = (entries) => {
     });
 };
 let observer = new IntersectionObserver(callback, options);
-/* const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) =>{
-        if (entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-    })
-}); */
 
 hidden.forEach((el) => observer.observe(el));
 
@@ -34,6 +27,7 @@ window.addEventListener('scroll', function(){
     sky.style.top = yValue + 0.1 + "px";
     text.style.left = yValue + 1 + "px";
     text.style.top = yValue + 0.1 + "px";
+    text.style.opacity = 1.5+  -yValue/100;
 })
 
 
