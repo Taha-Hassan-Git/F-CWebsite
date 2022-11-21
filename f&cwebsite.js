@@ -31,7 +31,7 @@ window.addEventListener('scroll', function(){
 })
 
 
-function showHide(button) {
+/* function showHide(button) {
     let toHideShow = document.getElementsByClassName(button.name);
     let showHide = button;
     if (showHide.innerHTML === "Show"){
@@ -42,4 +42,4 @@ function showHide(button) {
         toHideShow[0].classList.toggle('show');
     }
 }
-
+ */
