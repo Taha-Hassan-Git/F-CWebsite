@@ -243,32 +243,22 @@ h1{
     -o-transition: 1000ms;
 }
 .projectcontainer{
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 .projectoverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: var(--colour2);
-    min-width: 45vw;
-    min-height: 10vh;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.projectcontainer:hover .projectoverlay{
+    width: 100%;
 }
 .projecth2 {
     font-size: 25px
-}
-.HobbyPage {
-    background-image: url('brag.png');
-}
-.HobbyPage:hover {
-
-}
-.ProjectGallery {
-    background-color: #14213d;
-}
-.CommentBox {
-    background-color: #e5e5e5;
-}
-.MovieData {
-    background-color: aliceblue;
-}
-.WebsiteFeature {
-    background-color:aqua;
 }
