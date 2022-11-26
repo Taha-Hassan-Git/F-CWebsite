@@ -60,6 +60,14 @@ body{
     color: var(--colour2);
     justify-self: center;
 }
+.dalle2{
+    max-width: 500px;
+    align-self: center;
+}
+.dallecredit{
+    font-size: 10px;
+    align-self: center;
+}
 .fixed {
     width: 100vw;
     height: 50vh;
@@ -137,22 +145,14 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 50%;
     /* min-width: 200px; */
     min-height: fit-content;
     color: var(--colour4);
     /* margin-bottom: 50vh; */
     padding: 20px;
 }
-/* .card::before {
-    content: "";
-    position: absolute;
-    left:0;
-    top: -18vh;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to top, var(--colour5), transparent);
-    z-index: -1;
-}
+
 .card::after {
     content: "";
     position: absolute;
@@ -182,39 +182,10 @@ h1{
     color: var(--colour2);
     font-family: 'Montserrat', sans-serif;
 }
-/* #tohide{
-    opacity: 0;
-    transition: opacity 500ms linear;
-    -webkit-transition: opacity 500ms linear;
-    -moz-transition: opacity 500ms linear;
-    -ms-transition: opacity 500ms linear;
-    -o-transition: opacity 500ms linear;
-    padding-bottom: 6vh;
-}
-#tohide.show{
-    opacity: 1;
-    transition: opacity 500ms linear;
-    -webkit-transition: opacity 500ms linear;
-    -moz-transition: opacity 500ms linear;
-    -ms-transition: opacity 500ms linear;
-    -o-transition: opacity 500ms linear;
-} */
 
 #introh1{
     color: var(--colour1);
 }
-
-/* .showhide{
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 2rem;
-    width: 5rem;
-    align-self: center;
-    justify-self: flex-end;
-    background-color: var(--colour2);
-    outline: outset 1px var(--colour5);
-    height: 2rem;
-} */
 
 .hidden{
     opacity: 0;
@@ -235,6 +206,7 @@ h1{
 }
 .projectcontainer{
     position: relative;
+    
 }
 .projectoverlay {
     position: absolute;
@@ -252,4 +224,17 @@ h1{
 }
 .projecth2 {
     font-size: 25px
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 25px;
+    transition: 600ms;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
 }
