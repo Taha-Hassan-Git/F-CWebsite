@@ -137,19 +137,19 @@ body{
 }
 .couplecontain{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
-    margin-top: 25vh;
-    margin-bottom: 50vh;
+    margin-top: 40vh;
+    margin-bottom: 25vh;
 }
 .card {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 50%;
-    /* min-width: 200px; */
+    max-width: 650px;
     min-height: fit-content;
     color: var(--colour4);
-    /* margin-bottom: 50vh; */
     padding: 20px;
 }
 
@@ -189,24 +189,38 @@ h1{
 
 .hidden{
     opacity: 0;
-    transition: 1500ms;
-    -webkit-transition: 1500ms;
-    -moz-transition: 1500ms;
-    -ms-transition: 1500ms;
-    -o-transition: 1500ms;
+    filter: blur(3px);
+    transition: 1000ms;
+    -webkit-transition: 1000ms;
+    -moz-transition: 1000ms;
+    -ms-transition: 1000ms;
+    -o-transition: 1000ms;
+    -webkit-filter: blur(3px);
+    transform: scale(95%);
+    -webkit-transform: scale(95%);
+    -moz-transform: scale(95%);
+    -ms-transform: scale(95%);
+    -o-transform: scale(95%);
 }
 
 .show {
     opacity: 1;
+    filter:blur(0);
+    transform: scale(100%);
     transition: 1500ms;
     -webkit-transition: 1500ms;
     -moz-transition: 1500ms;
     -ms-transition: 1500ms;
     -o-transition: 1500ms;
+    -webkit-filter:blur(0);
+    -webkit-transform: scale(100%);
+    -moz-transform: scale(100%);
+    -ms-transform: scale(100%);
+    -o-transform: scale(100%);
 }
 .projectcontainer{
     position: relative;
-    
+    min-width: 350px;    
 }
 .projectoverlay {
     position: absolute;
@@ -238,3 +252,12 @@ a:hover{
     -ms-transition: 600ms;
     -o-transition: 600ms;
 }
+@media screen and (min-width: 40em) {
+    .couplecontain{
+        flex: 0 1 calc(80% - 1em);
+    }
+    .projectcontainer{
+        width: 100%;
+    }
+}
+ 
