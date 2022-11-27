@@ -13,6 +13,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     background-color: var(--colour5);
+    line-height: 2;
 }
 
 
@@ -76,20 +77,27 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 50vh;
     background-attachment: fixed;
     background-color: black;
-    filter: grayscale(90%);
-    -webkit-filter: grayscale(90%);
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    filter: grayscale(10%);
+    -webkit-filter: grayscale(10%);
     transition: 300ms linear;
     -webkit-transition: 300ms linear;
     -moz-transition: 300ms linear;
     -ms-transition: 300ms linear;
     -o-transition: 300ms linear;
 }
+.fixed h1{
+    font-size: 20vh;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: auto;
+    position: absolute;
+}
 .fixed:hover {
-    filter: grayscale(50%);
-    -webkit-filter: grayscale(50%);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
     transition: 300ms linear;
     -webkit-transition: 300ms linear;
     -moz-transition: 300ms linear;
@@ -140,8 +148,6 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 40vh;
-    margin-bottom: 25vh;
 }
 .card {
     display: flex;
@@ -152,22 +158,12 @@ body{
     min-height: fit-content;
     color: var(--colour4);
     padding: 20px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
-.card::after {
-    content: "";
-    position: absolute;
-    left:0;
-    bottom: -18vh;
+.fullwidth{
     width: 100%;
-    height: 150px;
-    background: linear-gradient(to bottom, var(--colour5), transparent);
-    z-index: -1;
-} 
-
-.card p {
-    width: 80%;
-    max-width: 800px;
 }
 .card h1 {
     font-size: 45px;
@@ -175,6 +171,10 @@ body{
     align-self: center;
 }
 
+iframe{
+    /* width: 560px; */
+    height: 315px;
+}
 .one{
     background-color: var(--colour2);
 }
@@ -274,6 +274,12 @@ a:hover{
     }
     .card{
         width: 100%;
+    }
+    .fixed h1{
+        font-size: 20vw;
+    }
+    .card p {
+        font-size: 14px;
     }
 }
  
