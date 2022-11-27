@@ -17,7 +17,7 @@ body{
 
 
 .parallax{
-    width: 100%;
+    width: 100VW;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -147,6 +147,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 50%;
     max-width: 650px;
     min-height: fit-content;
     color: var(--colour4);
@@ -162,7 +163,7 @@ body{
     height: 150px;
     background: linear-gradient(to bottom, var(--colour5), transparent);
     z-index: -1;
-} */
+} 
 
 .card p {
     width: 80%;
@@ -220,7 +221,8 @@ h1{
 }
 .projectcontainer{
     position: relative;
-    min-width: 350px;    
+    width: 100%;  
+    border: 2px solid var(--colour2); 
 }
 .projectoverlay {
     position: absolute;
@@ -236,8 +238,16 @@ h1{
 .projectcontainer:hover .projectoverlay{
     width: 100%;
 }
+.projectimage{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .projecth2 {
-    font-size: 25px
+    font-size: 25px;
+    position: absolute;
+    color: var(--colour2);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 a{
@@ -245,18 +255,24 @@ a{
     text-decoration: none;
 }
 a:hover{
-    font-size: 25px;
+    
     transition: 600ms;
     -webkit-transition: 600ms;
     -moz-transition: 600ms;
     -ms-transition: 600ms;
     -o-transition: 600ms;
 }
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 40em) {
     .couplecontain{
         flex: 0 1 calc(80% - 1em);
     }
     .projectcontainer{
+        width: 100%;
+    }
+    .dalle2{
+        width: 100%;
+    }
+    .card{
         width: 100%;
     }
 }
