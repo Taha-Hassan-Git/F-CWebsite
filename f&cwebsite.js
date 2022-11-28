@@ -6,7 +6,7 @@ const hidden = document.querySelectorAll(".hidden");
 let options = {
     root: null,
     rootMargin: "10px",
-    threshold: 0.75
+    threshold: 0.5
   }
   
 
