@@ -60,6 +60,8 @@ body{
     font-size: 10vw;
     color: var(--colour2);
     justify-self: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
 }
 .dalle2{
     max-width: 500px;
@@ -162,9 +164,6 @@ body{
     margin-bottom: 10vh;
 }
 
-.fullwidth{
-    width: 100%;
-}
 .card h1 {
     font-size: 45px;
     justify-self: center;
